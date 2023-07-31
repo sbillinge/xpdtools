@@ -241,6 +241,7 @@
         <span class="kn">import</span> <span class="nn">pyFAI</span>
 
         <span class="n">ns</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">_output_sinks</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">ns</span><span class="p">))</span>
 
         <span class="n">ns</span><span class="p">[</span><span class="s2">&quot;polarization_array&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="n">polarization</span><span class="p">,)</span>
         <span class="n">ns</span><span class="p">[</span><span class="s2">&quot;dark_corrected_background&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="n">bg_scale</span><span class="p">,)</span>
